@@ -1,0 +1,11 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>CyberAI</title>
+<style>:root{color-scheme:dark}body{background:#0b0e14;color:#9fb0c0;font:16px -apple-system,Segoe UI,sans-serif;display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0;padding:18px;box-sizing:border-box;text-align:center}h1{font-size:20px;color:#dce8f4;font-weight:600}a{color:#3b82f6}</style></head>
+<body><div><h1 id="t">Загрузка…</h1><p id="m"></p></div><script>
+// Зеркало: первый доступный адрес получает переход. Секретов здесь нет; личный ключ приходит в #k=… и GitHub его не видит.
+var BASES=["https://cyberaihelp.cc"];
+var k=(location.hash.match(/k=([\w.-]+)/)||[])[1]||"";
+function ok(b){return new Promise(function(r){var c=new AbortController(),t=setTimeout(function(){c.abort();r(false)},5000);
+fetch(b+"/manifest.json",{mode:"no-cors",cache:"no-store",signal:c.signal}).then(function(){clearTimeout(t);r(true)}).catch(function(){clearTimeout(t);r(false)})})}
+(async function(){for(var i=0;i<BASES.length;i++){if(await ok(BASES[i])){location.replace(BASES[i]+"/"+(k?"?k="+encodeURIComponent(k):""));return}}
+document.getElementById("t").textContent="Сейчас не открывается";document.getElementById("m").innerHTML='Попробуйте другую сеть или нажмите /start в боте <a href="https://t.me/BoosterTopBot">@BoosterTopBot</a>.'})();
+</script></body></html>

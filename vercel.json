@@ -1,0 +1,2 @@
+{"outputDirectory":"public","framework":null,"buildCommand":null,"installCommand":null,
+ "rewrites":[{"source":"/:path*","destination":"https://cyberaihelp.cc/:path*"}]}
